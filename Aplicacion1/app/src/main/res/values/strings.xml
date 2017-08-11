@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aplicacion1</string>
+    <string name="txtcont">Continuar</string>
+    <color name="verde">#00FF00</color>
+</resources>
