@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_dark"
+    android:background="@android:color/background_light"
     tools:context="com.example.jonathan.proyectofinal.MainActivity">
 
     <TextView
@@ -40,27 +40,27 @@
         android:id="@+id/txtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
-        android:ems="10"
         android:width="200dp"
         android:height="300dp"
-        android:inputType="textPersonName"
-        android:background="#ffffff"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" />
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:width="200dp"
-        android:background="#ffffff"
-        android:inputType="textPassword"
-        android:layout_below="@+id/textView5"
         android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="12dp"
+        android:width="200dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnIngresar"

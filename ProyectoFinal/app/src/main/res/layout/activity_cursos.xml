@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.proyectofinal.Cursos">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cursos"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <ImageButton
+        android:id="@+id/imgPingPong"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pingpong2"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/imgCapoeira"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/capoeira2"
+        android:layout_alignTop="@+id/imgPingPong"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/imgBaloncesto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:layout_alignLeft="@+id/imgPingPong"
+        android:layout_alignStart="@+id/imgPingPong"
+        android:layout_below="@+id/imgPingPong"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/baloncesto3" />
+
+    <ImageButton
+        android:id="@+id/imgTenis"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/tenis2"
+        android:layout_alignTop="@+id/imgBaloncesto"
+        android:layout_alignLeft="@+id/imgCapoeira"
+        android:layout_alignStart="@+id/imgCapoeira" />
+
+    <ImageButton
+        android:id="@+id/imgFutbol"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:layout_alignLeft="@+id/imgBaloncesto"
+        android:layout_alignStart="@+id/imgBaloncesto"
+        android:layout_below="@+id/imgBaloncesto"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/futbol1" />
+
+    <ImageButton
+        android:id="@+id/imgBallet"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/imgTenis"
+        android:layout_alignStart="@+id/imgTenis"
+        android:layout_alignTop="@+id/imgFutbol"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ballet" />
+</RelativeLayout>

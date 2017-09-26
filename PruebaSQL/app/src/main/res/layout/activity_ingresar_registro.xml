@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.pruebasql.ingresarRegistro">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Documento"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_above="@+id/docuText"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="86dp"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="codigo"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="134dp"
+        android:layout_below="@+id/nomText"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/docuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_above="@+id/btnInsertar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/nomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="78dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/codText"
+        android:layout_alignStart="@+id/codText" />
+
+    <EditText
+        android:id="@+id/codText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="121dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/btnInsertar"
+        android:layout_alignStart="@+id/btnInsertar" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insertar"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+</RelativeLayout>

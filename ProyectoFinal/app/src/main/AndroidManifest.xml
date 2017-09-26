@@ -17,13 +17,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActividadesPrestamos"
-            android:label="@string/title_activity_actividades_prestamos"
+            android:name=".MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Cursos" />
+        <activity android:name=".PingPong" />
+        <activity android:name=".Capoeira"></activity>
     </application>
 
 </manifest>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 String pass = ((EditText)findViewById(R.id.txtPassword)).getText().toString();
                 if(usuario.equals("1026298238") && pass.equals("123456"))
                 {
-                    Intent intent = new Intent(MainActivity.this,ActividadesPrestamos.class);
+                    Intent intent = new Intent(MainActivity.this,MenuPrincipal.class);
                     startActivity(intent);
                 }
                 else{
