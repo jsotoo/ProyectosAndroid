@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.parcial.InsertarDatos">
+
+    <EditText
+        android:id="@+id/txtCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:background="#fad60a"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:layout_below="@+id/txtNombres"
+        android:layout_alignLeft="@+id/txtNombres"
+        android:layout_alignStart="@+id/txtNombres"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="69dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/txtNombres"
+        android:layout_alignStart="@+id/txtNombres"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar Empleados"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="25dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="186dp"
+        android:layout_above="@+id/txtCargo"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:background="#fad60a"
+        tools:layout_editor_absoluteY="110dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/txtEmpresa"
+        android:layout_alignStart="@+id/txtEmpresa"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:id="@+id/txtEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:background="#fad60a"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="329dp"
+        android:layout_above="@+id/btnInsertar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="71dp" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERTAR"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="399dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="37dp" />
+</RelativeLayout>
