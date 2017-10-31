@@ -33,6 +33,7 @@ public class RegistroCurso extends AppCompatActivity implements View.OnClickList
         codigo = (EditText) findViewById(R.id.txtCod);
         correo = (EditText) findViewById(R.id.txtCorr);
         registro = (Button) findViewById(R.id.btnReg);
+        registro.setOnClickListener(this);
 
 
 
@@ -57,5 +58,9 @@ public class RegistroCurso extends AppCompatActivity implements View.OnClickList
         Long resultante = db.insert(Utilidades.TABLA_CURSO,null,values);
 
         Toast.makeText(getApplicationContext(),"Registro Correcto ", Toast.LENGTH_SHORT).show();
+        nombre.setText("");
+        codigo.setText("");
+        correo.setText("");
+
     }
 }

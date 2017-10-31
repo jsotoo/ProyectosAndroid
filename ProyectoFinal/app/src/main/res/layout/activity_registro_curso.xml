@@ -76,13 +76,14 @@
 
     <Button
         android:id="@+id/btnReg"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtCorr"
+        android:layout_alignRight="@+id/txtCorr"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="31dp"
         android:text="Registrar"
         tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="408dp"
-        android:layout_below="@+id/spinner"
-        android:layout_alignRight="@+id/txtCorr"
-        android:layout_alignEnd="@+id/txtCorr"
-        android:layout_marginTop="31dp" />
+        tools:layout_editor_absoluteY="408dp" />
 </RelativeLayout>

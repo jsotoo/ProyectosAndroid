@@ -41,12 +41,15 @@ public class MainActivity extends AppCompatActivity {
                 if(contr.equals(passF)){
                     Intent i = new Intent(MainActivity.this, MenuPrincipal.class);
                     startActivity(i);
-                    usu.equals("");
-                    contr.equals("");
+                    user.setText("");
+                    pass.setText("");
+
                 }
                 else{
                     Toast temp = Toast.makeText(getApplicationContext(),"Usuario o contrasena incorrectos", Toast.LENGTH_LONG);
                     temp.show();
+                    user.setText("");
+                    pass.setText("");
                 }
 
 

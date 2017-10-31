@@ -14,7 +14,7 @@ public class Utilidades {
 
 
     public static final String CREAR_TABLA_CURSO = "CREATE TABLE " + "" + TABLA_CURSO +" ("+CAMPO_NOMBRES
-            +" TEXT, "+ CAMPO_CODIGO + " TEXT,"+ CAMPO_CORREO+ " TEXT," +CAMPO_CURSO +" TEXT)";
+            +" TEXT, "+ CAMPO_CODIGO + " INTEGER,"+ CAMPO_CORREO+ " TEXT," +CAMPO_CURSO +" TEXT)";
 
 
 

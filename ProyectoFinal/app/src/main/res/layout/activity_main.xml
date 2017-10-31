@@ -64,13 +64,14 @@
 
     <Button
         android:id="@+id/btnIngresar"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="39dp"
-        android:text="INGRESAR"
+        android:layout_alignEnd="@+id/txtPassword"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/txtPassword"
-        android:layout_alignEnd="@+id/txtPassword" />
+        android:layout_marginBottom="39dp"
+        android:text="INGRESAR" />
 
     <ImageView
         android:id="@+id/imgUnilibre"
@@ -83,14 +84,14 @@
 
     <Button
         android:id="@+id/btnRegistrar"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTRARSE"
         android:layout_alignBaseline="@+id/btnIngresar"
         android:layout_alignBottom="@+id/btnIngresar"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
-        />
+        android:text="REGISTRARSE" />
 
     <TextView
         android:id="@+id/textView4"

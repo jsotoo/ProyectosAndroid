@@ -53,11 +53,11 @@ public class RegistroEstudiante extends AppCompatActivity {
 
                     helper.insertarEstudiante(est);
                     Toast.makeText(getApplicationContext(),"Registro Correcto", Toast.LENGTH_LONG).show();
-                    nombreStr.equals("");
-                    correoStr.equals("");
-                    usuarioStr.equals("");
-                    passStr.equals("");
-                    pass2Str.equals("");
+                    nombres.setText("");
+                    correo.setText("");
+                    usuario.setText("");
+                    password.setText("");
+                    password2.setText("");
 
                 }
             }
