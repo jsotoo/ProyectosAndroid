@@ -1,11 +1,15 @@
 package com.example.jonathan.parcial;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.jonathan.parcial.utilidades.Utilidades;
 
 public class InsertarDatos extends AppCompatActivity implements View.OnClickListener{
 
@@ -24,13 +28,19 @@ public class InsertarDatos extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        String nom = nombres.getText().toString();
-        String car = cargo.getText().toString();
-        String emp = empresa.getText().toString();
+        registrarUsuarios();
+    }
+    public void registrarUsuarios() {
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_empleados",null,1);
+        SQLiteDatabase db = conn.getWritableDatabase();
 
-        DataBaseManager m = new DataBaseManager(this);
-        m.insertar(nom,car,emp);
+        ContentValues values = new ContentValues();
+        values.put(Utilidades.CAMPO_NOMBRES,nombres.getText().toString());
+        values.put(Utilidades.CAMPO_CARGO,cargo.getText().toString());
+        values.put(Utilidades.CAMPO_EMPRESA,empresa.getText().toString());
 
-        Toast.makeText(getApplicationContext(), "Correcto",  Toast.LENGTH_LONG).show();
+        Long resultante = db.insert(Utilidades.TABLA_EMPLEADO,null,values);
+
+        Toast.makeText(getApplicationContext(),"Registro Correcto ", Toast.LENGTH_SHORT).show();
     }
 }

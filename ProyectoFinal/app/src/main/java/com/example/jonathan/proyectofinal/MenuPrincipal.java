@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class MenuPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -21,6 +22,14 @@ public class MenuPrincipal extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
+        String url = "http://www.unilibre.edu.co/bogota/ul/bienestar-universitario";
+        WebView view = (WebView) this.findViewById(R.id.webView);
+        view.getSettings().setJavaScriptEnabled(true);
+        view.loadUrl(url);
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

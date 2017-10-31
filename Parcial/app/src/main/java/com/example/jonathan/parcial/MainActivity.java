@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_empleados",null,1);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -85,6 +89,8 @@ public class MainActivity extends AppCompatActivity
            Intent i = new Intent(this, InsertarDatos.class);
             startActivity(i);
         } else if (id == R.id.LlenadoDatos) {
+            Intent i2 = new Intent(this, MostrarDatos.class);
+            startActivity(i2);
 
         }
 

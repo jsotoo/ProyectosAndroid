@@ -24,6 +24,7 @@
             android:name=".llenarDatos"
             android:label="@string/title_activity_llenar_datos"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MostrarDatos"></activity>
     </application>
 
 </manifest>

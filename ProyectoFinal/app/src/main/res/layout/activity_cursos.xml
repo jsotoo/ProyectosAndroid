@@ -4,27 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context="com.example.jonathan.proyectofinal.Cursos">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cursos"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="16dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:text="Cursos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
         android:id="@+id/imgPingPong"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="14dp"
         android:background="#ffff"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/pingpong2"
-        android:layout_marginTop="44dp"
         android:layout_below="@+id/textView3"
         android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3" />
@@ -44,35 +47,35 @@
         android:id="@+id/imgBaloncesto"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
         android:layout_alignLeft="@+id/imgPingPong"
         android:layout_alignStart="@+id/imgPingPong"
         android:layout_below="@+id/imgPingPong"
         android:layout_marginTop="23dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/baloncesto3" />
 
     <ImageButton
         android:id="@+id/imgTenis"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_alignLeft="@+id/imgCapoeira"
+        android:layout_alignStart="@+id/imgCapoeira"
+        android:layout_alignTop="@+id/imgBaloncesto"
         android:background="#ffff"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/tenis2"
-        android:layout_alignTop="@+id/imgBaloncesto"
-        android:layout_alignLeft="@+id/imgCapoeira"
-        android:layout_alignStart="@+id/imgCapoeira" />
+        app:srcCompat="@drawable/tenis2" />
 
     <ImageButton
         android:id="@+id/imgFutbol"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
         android:layout_alignLeft="@+id/imgBaloncesto"
         android:layout_alignStart="@+id/imgBaloncesto"
         android:layout_below="@+id/imgBaloncesto"
         android:layout_marginTop="25dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/futbol1" />
 
     <ImageButton
@@ -85,4 +88,14 @@
         android:background="#ffff"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ballet" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFutbol"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imgFutbol"
+        android:layout_toRightOf="@+id/imgFutbol"
+        android:text="REGISTRARSE" />
 </RelativeLayout>

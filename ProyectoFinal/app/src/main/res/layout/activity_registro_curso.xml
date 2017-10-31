@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.proyectofinal.RegistroCurso.RegistroCurso">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Curso"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="82dp"
+        android:layout_below="@+id/textView41"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/txtCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp"
+        android:layout_below="@+id/txtNom"
+        android:layout_alignLeft="@+id/txtNom"
+        android:layout_alignStart="@+id/txtNom"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/txtCorr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="251dp"
+        android:layout_below="@+id/txtCod"
+        android:layout_alignLeft="@+id/txtCod"
+        android:layout_alignStart="@+id/txtCod"
+        android:layout_marginTop="24dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_below="@+id/txtCorr"
+        android:layout_alignLeft="@+id/txtCorr"
+        android:layout_alignStart="@+id/txtCorr"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="408dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignRight="@+id/txtCorr"
+        android:layout_alignEnd="@+id/txtCorr"
+        android:layout_marginTop="31dp" />
+</RelativeLayout>

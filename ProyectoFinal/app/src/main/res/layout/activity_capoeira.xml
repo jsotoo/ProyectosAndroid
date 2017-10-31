@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jonathan.proyectofinal.Capoeira">
+    android:background="@drawable/capoeira2"
+    tools:context="com.example.jonathan.proyectofinal.CursosInfo.Capoeira">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capoeira"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="309dp"
+        android:layout_height="61dp"
+        android:text="Universidad Libre Bosque Popular y Candelaria"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="121dp"
+        android:layout_below="@+id/textView28"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2:00 a 4:00 p.m"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="De miercoles a viernes"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="301dp"
+        android:layout_marginTop="157dp"
+        android:layout_below="@+id/textView29"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30" />
+</RelativeLayout>

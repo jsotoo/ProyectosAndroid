@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.proyectofinal.RegistroEstudiante.RegistroEstudiante">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Usuario"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_alignStart="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/txtCorreo"
+        android:layout_alignStart="@+id/txtCorreo" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="166dp"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="247dp"
+        android:layout_below="@+id/txtCorreo"
+        android:layout_alignLeft="@+id/txtUser"
+        android:layout_alignStart="@+id/txtUser"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrasena"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="347dp"
+        android:layout_below="@+id/txtUser"
+        android:layout_alignLeft="@+id/txtPass"
+        android:layout_alignStart="@+id/txtPass"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="372dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignRight="@+id/btnResgistro"
+        android:layout_alignEnd="@+id/btnResgistro"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnResgistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPass"
+        android:layout_alignStart="@+id/txtPass"
+        android:layout_below="@+id/txtPass"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar contrasena" />
+
+    <EditText
+        android:id="@+id/txtpass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+</RelativeLayout>

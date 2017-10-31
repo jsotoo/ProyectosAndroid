@@ -1,13 +1,15 @@
-package com.example.jonathan.proyectofinal;
+package com.example.jonathan.proyectofinal.CursosInfo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PingPong extends AppCompatActivity {
+import com.example.jonathan.proyectofinal.R;
+
+public class Ballet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ping_pong);
+        setContentView(R.layout.activity_ballet);
     }
 }

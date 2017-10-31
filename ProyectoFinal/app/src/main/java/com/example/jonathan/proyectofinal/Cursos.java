@@ -4,11 +4,21 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.jonathan.proyectofinal.CursosInfo.Ballet;
+import com.example.jonathan.proyectofinal.CursosInfo.Baloncesto;
+import com.example.jonathan.proyectofinal.CursosInfo.Capoeira;
+import com.example.jonathan.proyectofinal.CursosInfo.Futbol;
+import com.example.jonathan.proyectofinal.CursosInfo.PingPong;
+import com.example.jonathan.proyectofinal.CursosInfo.Tenis;
+import com.example.jonathan.proyectofinal.RegistroCurso.RegistroCurso;
 
 public class Cursos extends AppCompatActivity implements View.OnClickListener{
 
     ImageButton pingPong, tenis, capoeira, baloncesto, futbol, ballet;
+    Button registro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +29,21 @@ public class Cursos extends AppCompatActivity implements View.OnClickListener{
         ballet = (ImageButton) findViewById(R.id.imgBallet);
         futbol = (ImageButton) findViewById(R.id.imgFutbol);
         capoeira = (ImageButton) findViewById(R.id.imgCapoeira);
+        registro = (Button) findViewById(R.id.btn);
+
         pingPong.setOnClickListener(this);
+        tenis.setOnClickListener(this);
+        baloncesto.setOnClickListener(this);
+        ballet.setOnClickListener(this);
+        futbol.setOnClickListener(this);
+        capoeira.setOnClickListener(this);
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),RegistroCurso.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
@@ -33,6 +57,23 @@ public class Cursos extends AppCompatActivity implements View.OnClickListener{
                 Intent cap = new Intent(this, Capoeira.class );
                 startActivity(cap);
                 break;
+            case R.id.imgBallet:
+                Intent bal = new Intent(this, Ballet.class);
+                startActivity(bal);
+                break;
+            case R.id.imgBaloncesto:
+                Intent balon = new Intent(this, Baloncesto.class);
+                startActivity(balon);
+                break;
+            case R.id.imgFutbol:
+                Intent fut = new Intent(this, Futbol.class);
+                startActivity(fut);
+                break;
+            case R.id.imgTenis:
+                Intent ten = new Intent(this, Tenis.class);
+                startActivity(ten);
+                break;
+
 
         }
     }
