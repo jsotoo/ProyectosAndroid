@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:text="Universidad Libre de Colombia"
+        android:text="Universidad Libre"
         android:textColor="@android:color/background_dark"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="98dp"
@@ -87,11 +87,13 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="REGISTRARSE"
         android:layout_alignBaseline="@+id/btnIngresar"
         android:layout_alignBottom="@+id/btnIngresar"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:text="REGISTRARSE" />
+        android:layout_toLeftOf="@+id/btnIngresar"
+        android:layout_toStartOf="@+id/btnIngresar"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
 
     <TextView
         android:id="@+id/textView4"

@@ -21,7 +21,7 @@ public class RegistroCurso extends AppCompatActivity implements View.OnClickList
     EditText nombre, codigo, correo;
     Button registro;
     Spinner opciones;
-    String[] datos = {"Elige el curso" ,"pingPong", "Capoeira","Futbol","Baloncesto","Ballet","tenis"};
+    String[] datos = {"Elige el curso" ,"Tenis de mesa", "Capoeira","Futbol","Baloncesto","Ballet","Tenis"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,25 +42,34 @@ public class RegistroCurso extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        registrarUsuarios();
+        if(nombre.getText().toString().isEmpty() || codigo.getText().toString().isEmpty() || correo.getText().toString().isEmpty() || opciones.getSelectedItem().toString().equals("Elige el curso")){
+            Toast.makeText(getApplicationContext(),"Faltan campos por completar",Toast.LENGTH_LONG).show();
+        }else{
+            registrarUsuarios();
+        }
     }
 
     public void registrarUsuarios() {
-        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_cursos",null,1);
-        SQLiteDatabase db = conn.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(Utilidades.CAMPO_NOMBRES,nombre.getText().toString());
-        values.put(Utilidades.CAMPO_CODIGO,codigo.getText().toString());
-        values.put(Utilidades.CAMPO_CORREO,correo.getText().toString());
 
 
-        Long resultante = db.insert(Utilidades.TABLA_CURSO,null,values);
+            ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_cursos", null, 1);
+            SQLiteDatabase db = conn.getWritableDatabase();
 
-        Toast.makeText(getApplicationContext(),"Registro Correcto ", Toast.LENGTH_SHORT).show();
-        nombre.setText("");
-        codigo.setText("");
-        correo.setText("");
+            ContentValues values = new ContentValues();
+            values.put(Utilidades.CAMPO_NOMBRES, nombre.getText().toString());
+            values.put(Utilidades.CAMPO_CODIGO, codigo.getText().toString());
+            values.put(Utilidades.CAMPO_CORREO, correo.getText().toString());
+            values.put(Utilidades.CAMPO_CURSO, opciones.getSelectedItem().toString());
+
+
+            Long resultante = db.insert(Utilidades.TABLA_CURSO, null, values);
+
+
+            Toast.makeText(getApplicationContext(), "Registro Correcto ", Toast.LENGTH_SHORT).show();
+            nombre.setText("");
+            codigo.setText("");
+            correo.setText("");
+
 
     }
 }

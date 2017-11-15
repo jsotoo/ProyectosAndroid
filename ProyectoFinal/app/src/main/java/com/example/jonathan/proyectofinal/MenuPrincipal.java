@@ -15,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
+import com.example.jonathan.proyectofinal.Prestamos.prestamos;
+
 public class MenuPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -94,6 +96,8 @@ public class MenuPrincipal extends AppCompatActivity
             Intent i = new Intent(MenuPrincipal.this, Cursos.class);
             startActivity(i);
         } else if (id == R.id.solicitud_indumentaria) {
+            Intent i2 = new Intent(MenuPrincipal.this, prestamos.class);
+            startActivity(i2);
 
         } else if (id == R.id.concursos) {
 

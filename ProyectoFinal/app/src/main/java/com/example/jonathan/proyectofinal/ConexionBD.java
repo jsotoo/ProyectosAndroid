@@ -89,4 +89,7 @@ public class ConexionBD extends SQLiteOpenHelper {
         return b;
     }
 
+
+
+
 }

@@ -4,66 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bienestar"
+    android:background="@android:color/background_light"
     tools:context="com.example.jonathan.proyectofinal.CursosInfo.Tenis">
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:text="Tenis"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="46dp"
-        android:layout_marginLeft="97dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginBottom="50dp"
-        android:layout_above="@+id/textView38"
-        android:layout_alignLeft="@+id/textView39"
-        android:layout_alignStart="@+id/textView39" />
+        tools:layout_editor_absoluteY="46dp" />
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="309dp"
-        android:layout_height="61dp"
-        android:text="Universidad Libre Bosque Popular y Candelaria"
-        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView37"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:text="Lugar: Bloque D"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="121dp"
-        android:layout_marginBottom="39dp"
-        android:layout_above="@+id/textView39"
-        android:layout_alignRight="@+id/textView40"
-        android:layout_alignEnd="@+id/textView40" />
+        tools:layout_editor_absoluteY="121dp" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView44"
+        android:layout_alignStart="@+id/textView44"
+        android:layout_below="@+id/textView38"
+        android:layout_marginTop="64dp"
         android:text="2:00 a 4:00 p.m"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="248dp"
-        android:layout_marginBottom="50dp"
-        android:layout_above="@+id/textView40"
-        android:layout_alignLeft="@+id/textView40"
-        android:layout_alignStart="@+id/textView40" />
+        tools:layout_editor_absoluteY="248dp" />
 
     <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="De miercoles a viernes"
-        android:textColor="@android:color/black"
+        android:text="De miércoles a viernes"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="301dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="196dp"
+        android:layout_below="@+id/textView39"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_below="@+id/textView38"
+        android:layout_marginTop="14dp"
+        android:text="Hora"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/regBt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarme"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_marginBottom="91dp" />
 </RelativeLayout>

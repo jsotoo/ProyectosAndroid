@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.proyectofinal.Prestamos.prestamos">
+
+    <EditText
+        android:id="@+id/txtFechaEnt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnEntrega"
+        android:layout_alignLeft="@+id/txtHoraSol"
+        android:layout_alignStart="@+id/txtHoraSol"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtFechaSol"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_alignTop="@+id/btnSolicitud"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHoraEnt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnHoraEntrega"
+        android:layout_alignLeft="@+id/txtFechaEnt"
+        android:layout_alignStart="@+id/txtFechaEnt"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Fecha Solicitud"
+        android:layout_below="@+id/textView51"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <Button
+        android:id="@+id/btnEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSolicitud"
+        android:layout_alignStart="@+id/btnSolicitud"
+        android:layout_below="@+id/btnSolicitud"
+        android:layout_marginTop="76dp"
+        android:text="FECHA ENTREGA" />
+
+    <Button
+        android:id="@+id/btnHoraSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSolicitud"
+        android:layout_alignStart="@+id/btnSolicitud"
+        android:layout_below="@+id/btnSolicitud"
+        android:layout_marginTop="14dp"
+        android:text="Hora Solicitud" />
+
+    <Button
+        android:id="@+id/btnHoraEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnEntrega"
+        android:layout_alignStart="@+id/btnEntrega"
+        android:layout_below="@+id/btnEntrega"
+        android:layout_marginTop="19dp"
+        android:text="HORA ENTREGA" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/btnSolicitud"
+        android:layout_toRightOf="@+id/btnSolicitud"
+        android:text="Prestamos" />
+
+    <EditText
+        android:id="@+id/txtHoraSol"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnHoraSolicitud"
+        android:layout_alignLeft="@+id/txtFechaSol"
+        android:layout_alignStart="@+id/txtFechaSol"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>

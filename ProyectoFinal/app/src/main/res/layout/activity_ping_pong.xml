@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bienestar"
+    android:background="@android:color/background_light"
     tools:context="com.example.jonathan.proyectofinal.CursosInfo.PingPong">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:text="Tenis de Mesa"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -28,8 +28,8 @@
         android:layout_alignStart="@+id/textView9"
         android:layout_below="@+id/textView6"
         android:layout_marginTop="66dp"
-        android:text="Universidad Libre Bosque Popular"
-        android:textColor="@android:color/background_dark"
+        android:text="Lugar: Bloque D"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="80dp" />
@@ -45,7 +45,7 @@
         android:layout_marginStart="23dp"
         android:layout_marginTop="20dp"
         android:text="Hora"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="105dp" />
@@ -59,7 +59,7 @@
         android:layout_below="@+id/textView9"
         android:layout_marginTop="17dp"
         android:text="7:00 a 5:00 p.m"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="129dp" />
@@ -72,10 +72,20 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_below="@+id/textView10"
         android:layout_marginTop="63dp"
-        android:text="Todos los Sabados"
-        android:textColor="@android:color/background_dark"
+        android:text="Todos los Sábados"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="186dp" />
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Registrarme" />
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bienestar"
+    android:background="@android:color/background_light"
     tools:context="com.example.jonathan.proyectofinal.CursosInfo.Futbol">
 
     <TextView
@@ -12,69 +12,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hora"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="199dp"
         android:layout_below="@+id/textView33"
         android:layout_alignLeft="@+id/textView34"
         android:layout_alignStart="@+id/textView34"
-        android:layout_marginTop="17dp" />
+        android:layout_marginTop="22dp" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Futbol"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="42dp"
+        android:text="Fútbol"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="40dp" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="309dp"
         android:layout_height="61dp"
-        android:text="Universidad Libre Bosque Popular"
-        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="Lugar: Detras del Bloque C  "
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="121dp"
         android:layout_below="@+id/textView32"
-        android:layout_alignRight="@+id/textView35"
-        android:layout_alignEnd="@+id/textView35"
-        android:layout_marginTop="69dp" />
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2:00 a 4:00 p.m"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="248dp"
-        android:layout_above="@+id/textView35"
+        android:layout_below="@+id/textView33"
         android:layout_alignLeft="@+id/textView35"
         android:layout_alignStart="@+id/textView35"
-        android:layout_marginBottom="82dp" />
+        android:layout_marginTop="75dp" />
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="De miercoles a viernes"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="301dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="133dp" />
+        android:layout_alignTop="@+id/textView34"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="73dp"
+        android:text="De miércoles a viernes"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Button
+        android:id="@+id/registro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:text="Registrarme" />
+
 </RelativeLayout>

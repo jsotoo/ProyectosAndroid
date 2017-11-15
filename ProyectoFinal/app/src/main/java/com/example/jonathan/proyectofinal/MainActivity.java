@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.jonathan.proyectofinal.Administrador.administrador;
 import com.example.jonathan.proyectofinal.RegistroEstudiante.RegistroEstudiante;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +44,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(i);
                     user.setText("");
                     pass.setText("");
+                    Toast.makeText(getApplicationContext(),"Has ingresado como estudiante",Toast.LENGTH_LONG).show();
 
+                } else if(usu.equals("admin") && contr.equals("admin")){
+                    Intent i2 = new Intent (MainActivity.this, administrador.class);
+                    startActivity(i2);
+                    user.setText("");
+                    pass.setText("");
+                    Toast.makeText(getApplicationContext(),"Has ingresado como administrador",Toast.LENGTH_LONG).show();
                 }
                 else{
                     Toast temp = Toast.makeText(getApplicationContext(),"Usuario o contrasena incorrectos", Toast.LENGTH_LONG);

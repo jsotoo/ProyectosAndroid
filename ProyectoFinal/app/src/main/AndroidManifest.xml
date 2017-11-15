@@ -30,7 +30,12 @@
         <activity android:name=".CursosInfo.Futbol" />
         <activity android:name=".CursosInfo.Ballet" />
         <activity android:name=".CursosInfo.Baloncesto" />
-        <activity android:name=".RegistroCurso.RegistroCurso"></activity>
+        <activity android:name=".RegistroCurso.RegistroCurso" />
+        <activity android:name=".VerPerfil" />
+        <activity android:name=".Prestamos.prestamos" />
+        <activity android:name=".Administrador.administrador" />
+        <activity android:name=".Administrador.adminEventos" />
+        <activity android:name=".Administrador.adminPrestamos"></activity>
     </application>
 
 </manifest>
