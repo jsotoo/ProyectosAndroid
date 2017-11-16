@@ -16,8 +16,7 @@ public class PingPong extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ping_pong);
-        reg = (Button) findViewById(R.id.btn);
-        reg.setOnClickListener(this);
+
     }
 
     @Override

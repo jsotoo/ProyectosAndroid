@@ -20,11 +20,13 @@
         android:id="@+id/txtFechaSol"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView51"
-        android:layout_alignStart="@+id/textView51"
-        android:layout_alignTop="@+id/btnSolicitud"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/btnSolicitud"
+        android:layout_toRightOf="@+id/btnSolicitud"
+        android:layout_toEndOf="@+id/btnSolicitud"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
 
     <EditText
         android:id="@+id/txtHoraEnt"
@@ -38,18 +40,20 @@
 
     <Button
         android:id="@+id/btnSolicitud"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:text="Fecha Solicitud"
-        android:layout_below="@+id/textView51"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView51"
         android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp" />
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="41dp"
+        android:text="Fecha Solicitud" />
 
     <Button
         android:id="@+id/btnEntrega"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnSolicitud"
@@ -60,6 +64,7 @@
 
     <Button
         android:id="@+id/btnHoraSolicitud"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnSolicitud"
@@ -70,6 +75,7 @@
 
     <Button
         android:id="@+id/btnHoraEntrega"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnEntrega"
@@ -83,12 +89,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="32dp"
-        android:layout_toEndOf="@+id/btnSolicitud"
-        android:layout_toRightOf="@+id/btnSolicitud"
-        android:text="Prestamos" />
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/btnEntrega"
+        android:layout_toRightOf="@+id/btnEntrega"
+        android:text="Préstamos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtHoraSol"
@@ -99,4 +105,26 @@
         android:layout_alignStart="@+id/txtFechaSol"
         android:ems="10"
         android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnHoraEntrega"
+        android:layout_alignStart="@+id/btnHoraEntrega"
+        android:layout_below="@+id/txtHoraEnt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnPrestamo"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@+id/btnSolicitud"
+        android:layout_toRightOf="@+id/btnSolicitud"
+        android:text="REGISTRAR" />
 </RelativeLayout>

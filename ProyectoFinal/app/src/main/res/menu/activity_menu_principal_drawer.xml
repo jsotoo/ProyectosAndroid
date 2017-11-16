@@ -7,10 +7,7 @@
             android:title="Eventos" />
         <item
             android:id="@+id/solicitud_indumentaria"
-            android:title="indumentaria" />
-        <item
-            android:id="@+id/concursos"
-            android:title="Concursos" />
+            android:title="Préstamos" />
         <item
             android:id="@+id/perfil"
             android:title="Ver perfil" />

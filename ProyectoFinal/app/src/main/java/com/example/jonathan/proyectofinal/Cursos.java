@@ -29,7 +29,7 @@ public class Cursos extends AppCompatActivity implements View.OnClickListener{
         ballet = (ImageButton) findViewById(R.id.imgBallet);
         futbol = (ImageButton) findViewById(R.id.imgFutbol);
         capoeira = (ImageButton) findViewById(R.id.imgCapoeira);
-        registro = (Button) findViewById(R.id.btn);
+
 
         pingPong.setOnClickListener(this);
         tenis.setOnClickListener(this);
@@ -37,13 +37,7 @@ public class Cursos extends AppCompatActivity implements View.OnClickListener{
         ballet.setOnClickListener(this);
         futbol.setOnClickListener(this);
         capoeira.setOnClickListener(this);
-        registro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),RegistroCurso.class);
-                startActivity(i);
-            }
-        });
+
     }
 
     @Override

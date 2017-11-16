@@ -44,6 +44,9 @@ public class RegistroEstudiante extends AppCompatActivity {
                     Toast pass = Toast.makeText(getApplicationContext(),"las contrasenas no coinciden",Toast.LENGTH_LONG);
                     pass.show();
                 }
+                else if(nombres.getText().toString().isEmpty() || correo.getText().toString().isEmpty() || usuario.getText().toString().isEmpty() || password.getText().toString().isEmpty() || password2.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext()," Fatan campos por llenar", Toast.LENGTH_SHORT).show();
+                }
                 else{
                     Estudiante est = new Estudiante();
                     est.setNombre(nombreStr);

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.proyectofinal.Administrador.mostrarDetallesCursos">
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="63dp"
+        android:layout_above="@+id/etCodigo"
+        android:layout_alignLeft="@+id/btEditar"
+        android:layout_alignStart="@+id/btEditar"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="117dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/etCorreo"
+        android:layout_alignLeft="@+id/etNombre"
+        android:layout_alignStart="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="186dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/etCurso"
+        android:layout_alignLeft="@+id/etCodigo"
+        android:layout_alignStart="@+id/etCodigo" />
+
+    <EditText
+        android:id="@+id/etCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="262dp"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/btEditar"
+        android:layout_alignLeft="@+id/etCorreo"
+        android:layout_alignStart="@+id/etCorreo" />
+
+    <Button
+        android:id="@+id/btEditar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btEliminar"
+        android:layout_alignBottom="@+id/btEliminar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:text="Editar"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <Button
+        android:id="@+id/btEliminar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="173dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="ELIMINAR"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Editar o eliminar cursos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -16,7 +16,6 @@ public class Ballet extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ballet);
-        reg = (Button) findViewById(R.id.bReg);
         reg.setOnClickListener(this);
     }
 

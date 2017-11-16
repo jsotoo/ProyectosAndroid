@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.KeyEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.example.jonathan.proyectofinal.Prestamos.prestamos;
 
@@ -56,6 +58,8 @@ public class MenuPrincipal extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -99,8 +103,6 @@ public class MenuPrincipal extends AppCompatActivity
             Intent i2 = new Intent(MenuPrincipal.this, prestamos.class);
             startActivity(i2);
 
-        } else if (id == R.id.concursos) {
-
         } else if (id == R.id.perfil) {
 
         } else if (id == R.id.cerrar_sesion) {
@@ -113,4 +115,20 @@ public class MenuPrincipal extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+        if (keyCode == event.KEYCODE_BACK) {
+
+            return false;
+
+
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+
+
+
+
 }

@@ -16,8 +16,7 @@ public class Capoeira extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_capoeira);
-        reg = (Button) findViewById(R.id.btReg);
-        reg.setOnClickListener(this);
+
     }
 
     @Override

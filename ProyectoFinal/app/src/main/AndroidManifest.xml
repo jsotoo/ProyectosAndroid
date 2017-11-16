@@ -35,7 +35,8 @@
         <activity android:name=".Prestamos.prestamos" />
         <activity android:name=".Administrador.administrador" />
         <activity android:name=".Administrador.adminEventos" />
-        <activity android:name=".Administrador.adminPrestamos"></activity>
+        <activity android:name=".Administrador.adminPrestamos" />
+        <activity android:name=".Administrador.mostrarDetallesCursos"></activity>
     </application>
 
 </manifest>

@@ -16,8 +16,7 @@ public class Futbol extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_futbol);
-        reg = (Button) findViewById(R.id.registro);
-        reg.setOnClickListener(this);
+
     }
 
     @Override
